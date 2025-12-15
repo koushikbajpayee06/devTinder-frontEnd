@@ -1,16 +1,59 @@
-# React + Vite
+# DevTinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Create a Vite + React application
+- Remove unecessary code and create a Hello World app
+- Install Tailwind CSS
+- Install Daisy UI
+- Add NavBar component to App.jsx
+- Create a NavBar.jsx seperate Component file
+- Install react router dom
+- Create BrowserRouter > Routes > Route=/ Body >RouteChildren
+- Create an Outelt in your Body Component
+- Create a footer
+<!-- Body
+    NavBar
+    Route=/      => Feed
+    Route=/login => Login
+    Route=/connections => Connections
+    Route=/profile => profile -->
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create a Login Page
+- Install axios
+- CORS - install cors in backend => add middleware to app with configurations: Origin, credentials:true
+- Whenever you making API Call so pass axious=>{withCredientials:true}
+- nstall react-redux + @reduxjs/toolkit - https://redux-toolkit.js.org/tutorials/quick-start
+- configureStore => Provider => createSlice => add reducer to store
+- Add redux devtool into the chrome
+- Login and see if your data is coming properly in the store
+- Navbar should update as soon as user logs in
+- Refactorour code to add constants file + create a components folder
 
-## React Compiler
+- You should not be access other routes without login
+- If token is not present , redirect user to login
+- If token is not present , redirect user to login page
+- Logout Page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Deployment
+
+- Signup on AWS
+- Launch instance
+- chmod 400 <secret>.pem
+- ssh -i "devTinder-secret.pem" ubuntu@ec2-13-48-147-144.eu-north-1.compute.amazonaws.com
+- Install node version
+- Git Clone
+- Front End
+    - npm install --> dependencies Installed
+    - npm run build
+    - sudo apt update
+    - sudo apt install nginx
+    - sudo systemctl start nginx
+    - sudo systemctl enable nginx
+    - cope code from dist(build files) to var/www/html/
+    - sudo scp -r dist/*  /var/www/html/
+    - Enable port :80 of your instance
+
+
