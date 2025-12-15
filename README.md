@@ -17,12 +17,12 @@
     Route=/connections => Connections
     Route=/profile => profile -->
 
-
+EP- 02 :
 - Create a Login Page
 - Install axios
 - CORS - install cors in backend => add middleware to app with configurations: Origin, credentials:true
-- Whenever you making API Call so pass axious=>{withCredientials:true}
-- nstall react-redux + @reduxjs/toolkit - https://redux-toolkit.js.org/tutorials/quick-start
+- Whenever you making API Call so pass axious=> {withCredientials:true}
+- Install react-redux + @reduxjs/toolkit - https://redux-toolkit.js.org/tutorials/quick-start
 - configureStore => Provider => createSlice => add reducer to store
 - Add redux devtool into the chrome
 - Login and see if your data is coming properly in the store
