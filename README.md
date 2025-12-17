@@ -33,6 +33,7 @@ EP- 02 :
 - If token is not present , redirect user to login
 - If token is not present , redirect user to login page
 - Logout Page
+- Handling errors in ui
 
 
 
