@@ -1,10 +1,24 @@
+import axios from "axios";
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { BASE_URL } from '../utils/constants'
 
 const Navbar = () => {
     const user = useSelector((store)=>store.user);
     console.log(user);
+    const handleLogout=async()=>{
+      try{
+        await axios.post(
+          BASE_URL+ "/logout",
+          {},
+          {withCredentials:true});
+
+      }catch(err){
+        // Error logic maybe redirect to error page
+        console.log(err);
+      }
+    }
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
@@ -39,7 +53,7 @@ const Navbar = () => {
               <a>Settings</a>
             </li>
             <li>
-              <a>Logout</a>
+              <Link onClick={handleLogout}>Logout</Link>
             </li>
           </ul>
         </div>
