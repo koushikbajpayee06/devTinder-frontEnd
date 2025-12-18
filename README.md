@@ -35,7 +35,12 @@ EP- 02 :
 - Logout Feature
 - Handling errors in ui
 - Get the feed and add the feed in the feed store
-- Build the 
+- Build the user card on feed
+- Edit Profile Features
+- Show Profile Features 
+- Show Toast Message on Save of Profile
+- See all my connections
+- 
 
 
 # Deployment
