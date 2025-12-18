@@ -34,6 +34,8 @@ EP- 02 :
 - If token is not present , redirect user to login page
 - Logout Feature
 - Handling errors in ui
+- Get the feed and add the feed in the feed store
+- Build the 
 
 
 # Deployment
