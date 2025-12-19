@@ -39,8 +39,8 @@ EP- 02 :
 - Edit Profile Features
 - Show Profile Features 
 - Show Toast Message on Save of Profile
-- See all my connections
-- 
+- New Page - See all my connections
+- New Page - See all my connection Requests
 
 
 # Deployment
