@@ -1,5 +1,5 @@
 # DevTinder
-
+Day-01:
 - Create a Vite + React application
 - Remove unecessary code and create a Hello World app
 - Install Tailwind CSS
@@ -17,7 +17,7 @@
     Route=/connections => Connections
     Route=/profile => profile -->
 
-EP- 02 :
+Day-02:
 - Create a Login Page
 - Install axios
 - CORS - install cors in backend => add middleware to app with configurations: Origin, credentials:true
@@ -29,6 +29,7 @@ EP- 02 :
 - Navbar should update as soon as user logs in
 - Refactorour code to add constants file + create a components folder
 
+Day-03:
 - You should not be access other routes without login
 - If token is not present , redirect user to login
 - If token is not present , redirect user to login page
@@ -36,11 +37,14 @@ EP- 02 :
 - Handling errors in ui
 - Get the feed and add the feed in the feed store
 - Build the user card on feed
+
+Day-04:
 - Edit Profile Features
 - Show Profile Features 
 - Show Toast Message on Save of Profile
 - New Page - See all my connections
 - New Page - See all my connection Requests
+- Features - Accept/ Reject Connection Requests
 
 
 # Deployment
