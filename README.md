@@ -45,6 +45,10 @@ Day-04:
 - New Page - See all my connections
 - New Page - See all my connection Requests
 - Features - Accept/ Reject Connection Requests
+Remaining:
+- send/ignore the user card from feed
+- Signup New User
+- E2E Testing
 
 
 # Deployment
