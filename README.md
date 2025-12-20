@@ -45,13 +45,13 @@ Day-04:
 - New Page - See all my connections
 - New Page - See all my connection Requests
 - Features - Accept/ Reject Connection Requests
-Remaining:
 
-- Signup New User
-- E2E Testing
 Day-05
 - send/ignore the user card from feed
+- Signup New User
+- E2E Testing
 
+Remaining:
 # Deployment
 
 - Signup on AWS
