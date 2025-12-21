@@ -1,13 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Body from './components/Body'
-import Login from './components/login'
+import Login from './components/Login'
 import Profile from './components/Profile'
 import { Provider } from 'react-redux'
 import appStore from './utils/appStore'
 import Feed from './components/Feed'
 import Connections from './components/Connections'
 import Requests from './components/Requests'
+
 
 const App = () => {
   return (
