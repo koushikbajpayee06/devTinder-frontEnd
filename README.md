@@ -73,7 +73,9 @@ Remaining:
 -Backend Deployment
 - Updated DB password
 - allowed EC2 instance public IP on MongoDb server
-- installed pm2 -g
--
+- installed pm2 -g -- npm install pm2 -g
+- pm2 start npm --name "devTinder-Backend" -- start (custom name)
+- pm2 logs
+- pm2 list, pm2 flush <name>, pm2 stop<name>,  pm2 delete<name>
 
 
