@@ -73,5 +73,7 @@ Remaining:
 -Backend Deployment
 - Updated DB password
 - allowed EC2 instance public IP on MongoDb server
+- installed pm2 -g
+-
 
 
