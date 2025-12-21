@@ -67,8 +67,10 @@ Remaining:
     - sudo apt install nginx
     - sudo systemctl start nginx
     - sudo systemctl enable nginx
-    - cope code from dist(build files) to var/www/html/
+    - copy code from dist(build files) to var/www/html/ (nginx http server)
     - sudo scp -r dist/*  /var/www/html/
     - Enable port :80 of your instance
+-Backend Deployment
+- Updated DB password
 
 
