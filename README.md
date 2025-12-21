@@ -72,5 +72,6 @@ Remaining:
     - Enable port :80 of your instance
 -Backend Deployment
 - Updated DB password
+- allowed EC2 instance public IP on MongoDb server
 
 
