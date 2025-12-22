@@ -77,5 +77,37 @@ Remaining:
 - pm2 start npm --name "devTinder-Backend" -- start (custom name)
 - pm2 logs
 - pm2 list, pm2 flush <name>, pm2 stop<name>,  pm2 delete<name>
+- config nginx -/etc/nginx/sites-available/default
+- restart nginx - sudo systemctl restart nginx
+- Modify the BASEURLCin frontend project to "/api"
+
+
+
+## Nginx config:
+
+Frontend = http://54.206.69.78/
+Backend = http://54.206.69.78:7777/
+
+Domain name = devtinder.com =>54.206.69.78/ (DNS mappping)
+Backend = devtinder.com:7777 => devtinder.com/api
+
+ngnx config:
+
+server_name 43.204.96.49;
+location /api/ {
+        proxy_pass http://localhost:7777/;
+        
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        proxy_cache_bypass $http_upgrade;
+    }
+
 
 
