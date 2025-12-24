@@ -74,7 +74,7 @@ Remaining:
 - Updated DB password
 - allowed EC2 instance public IP on MongoDb server
 - installed pm2 -g -- npm install pm2 -g
-- pm2 start npm --name "devTinder-Backend" -- start (custom name)
+- pm2 start npm --name "devtinder-Backend" -- start (custom name)
 - pm2 logs
 - pm2 list, pm2 flush <name>, pm2 stop<name>,  pm2 delete<name>
 - config nginx -/etc/nginx/sites-available/default
@@ -109,5 +109,11 @@ location /api/ {
         proxy_cache_bypass $http_upgrade;
     }
 
-
+# Adding a custom Domain Name
+ - Purchased domain name from godaddy
+ - signup on cloudeflare & add a new domain name
+ - change the name servers on godaddy and point it to cloudeflare
+ - Wait for some times till your nameservers are updated ~ 15 mins
+ - DNS record: a http://devsconnect.co.in/ - 16.176.34.8
+ - Enable ssl for website
 
